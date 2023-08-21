@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discriopatin" content="">
+    <meta name="keywords" content="">
+    <title>Contact</title>
+</head>
+
+<body>
+
+
+    <style>
+         header {
+            background-color: rgb(8, 8, 8);
+            width: 100%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+        }
+        nav ul{
+    display: flex;
+    flex-direction: row;
+}
+        .logo {
+            text-decoration: none;
+            padding-left: 50px;
+            color: white;
+            font-weight: 900;
+            font-size: 2em;
+        }
+
+        nav {
+            padding-right: 50px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            padding-right: 23px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        .content {
+            padding-top: 200PX;
+            padding-left: 20PX;
+        }
+        .content2 {
+            padding-top: 200PX;
+            padding-left: 20PX;
+        }
+
+        footer{
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: black;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #fff;
+                text-align: center;
+            }   
+
+        
+        .title {
+            display: flex;
+            justify-content: center;
+            font-size: 3em;
+            font-weight: 900;
+            color: black;
+        }
+
+        label {
+            padding: 15px;
+            padding-right: 30px;
+            font-size: 1.5em;
+            font-weight: 800;
+        }
+
+        .input {
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+            margin-left: 60px;
+            width: 100%;
+        }
+
+        .button {
+            width: 50%;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(10, 10, 10);
+            font-size: 1.5em;
+            font-weight: 90;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .textarea {
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+            margin-left: 60px;
+            width: 100%;
+            margin-bottom: 70px;
+
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+        .hellop{            margin-top: 100px;
+
+            border: 2px black solid;
+            width: 75%
+        }
+        .rm{
+            display: flex;
+        }
+        .bbb{
+            display: flex;
+            justify-content: center;
+        }
+       
+       label{
+        width: 10%;
+        text-align: center;
+       }
+
+        @media only screen and (max-width: 450px) {
+            .content,header{
+                flex-wrap: wrap;
+            }
+            header nav ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            header li{
+                width: 40%;
+                padding: 0;
+            }
+            header nav ul,header nav{
+                padding: 0;
+            }
+            footer{
+                font-size: 1.2em;
+                padding: 5px;
+            }
+            .logo{
+                padding: 0;
+            }
+            header{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .hellop{
+                margin: 180px 10px 10px 10px;
+                width: 100%;
+            }
+            .title{
+                margin: 0;
+            }
+            .rm{
+                flex-wrap: wrap;
+                
+            }
+            .input, .textarea{
+                width: 100%;
+                margin: 10px;
+            }
+            label{
+                text-align: left;
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        function valid() {
+            var email = document.getElementById("E-mail").value;
+            var phone = document.getElementById("Phone").value;
+            var mas = document.getElementById("message").value;
+            if (email == "") {
+                alert("please enter email");
+            }
+            if (phone == "") {
+                alert("please enter phone");
+            }
+            if (message == "") {
+                alert("please enter message");
+            }
+
+            if (email != "" && phone != ""  &&message != "") {
+                alert("success")
+            }
+        }
+    </script>
+   <header>
+    <a href="#" class="logo">Diving</a>
+    <nav>
+        <ul>
+            <li><a href="INDEX.HTML">about</a></li>
+            <li><a href="SERVICE.HTML">services</a></li>
+            <li><a href="OFFERS.HTML">offers</a></li>
+            <li><a href="CONTACT.HTML">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="main">
+
+        <div class="hellop">
+            <h1 class="title">Contact</h1>
+        <div class="rm">
+            <label>E-mail</label>
+            <input class="input" type="text" id="E-mail"> <br>
+        </div>       
+         <div class="rm">
+
+            <label>Phone </label>
+            <input class="input" type="text" id="Phone"><br>
+        </div>       
+         <div class="rm">
+
+            <label>message</label>
+            <textarea class="textarea" cols="10" rows="9" id="message"></textarea>
+        </div>         
+        <div class="rm bbb">
+
+            <a class="button" href="#" onclick="valid()">send</a>
+        </div>
+    </div>
+        
+    </section>
+
+    <footer>    copy rigth 2023 scuba diving All rigth reserved </footer>
+</body>
+
+</html>

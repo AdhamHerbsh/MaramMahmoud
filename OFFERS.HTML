@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFERS</title>
+</head>
+<body>
+    <style>
+        header {
+            background-color: rgb(8, 8, 8);
+            width: 100%;
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        .logo {
+            text-decoration: none;
+            padding-left: 50px;
+            color: white;
+            font-weight: 900;
+            font-size: 2em;
+        }
+
+        nav {
+            padding-right: 50px;
+        }
+
+        nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+        header nav a {
+            text-decoration: none;
+            padding-right: 23px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 10%;
+        }
+        .content {
+            padding-left: 20PX;
+        }
+
+        .content h2 {
+            font-weight: 900;
+            font-size: 3em;
+        }
+
+        .content p {
+
+            font-size: 2em;
+
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .card {
+            border: solid;
+            border-radius: 15px;
+            margin: 15px;
+            width: 30%;
+            padding: 15px;
+            
+        }
+        footer{
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: black;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #fff;
+                text-align: center;
+            }
+        @media only screen and (max-width: 450px) {
+            footer{
+                font-size: 1.2em;
+                padding: 5px;
+            }
+            .content{
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+
+            }
+            .card{
+                width: 80%;
+                margin: 10;
+            }
+            
+            header nav ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            header li{
+                width: 40%;
+                padding: 0;
+            }
+            header nav ul,header nav{
+                padding: 0;
+            }
+            header{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo{
+                padding: 0;
+            }
+        }
+    </style>
+    <header>
+        <a href="#" class="logo">Diving</a>
+        <nav>
+            <ul>
+                <li><a href="INDEX.HTML">about</a></li>
+                <li><a href="SERVICE.HTML">services</a></li>
+                <li><a href="OFFERS.HTML">offers</a></li>
+                <li><a href="CONTACT.HTML">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main" >
+        <h1 class="title" style="margin-top:100px"> OFFERS</h1>
+        <div class="content">
+            <div class="card">
+            <h2> beginner </h2>
+            <p> •T2" recreatinal coureses<br>
+                •2 open water diving seesions free eqquioment hire<br>
+                •5% discount on equipment pirchase</p>
+        </div>
+            <div class="card">
+                <h2> intermediate </h2>
+                <p>• 2" speclist courses<br>
+                    •  4" open water diving sessions<br>
+                    • free equipment hire<br>
+                    • 10% discount on equipment purchase</p>
+                </div>
+                    <div class="card">
+
+                
+                    <h2> advanced </h2>
+                    <p>• 1* instroctur training course <br>
+                        • 2 skilss devlopment workshops<br>
+                        •  2 years free equipment servicing<br>
+                        •  20* discount on one liveboard holiday</p>
+                    </div>
+                        
+        </div>
+       <div style="height: 50px;"></div>
+    </section>
+    <footer>    copy rigth 2023 scuba diving All rigth reserved </footer>
+</body>
+</html>
