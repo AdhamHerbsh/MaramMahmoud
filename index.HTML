@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+
+<body>
+    <style>
+        header {
+            background-color: rgb(8, 8, 8);
+            width: 100%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        .logo {
+            text-decoration: none;
+            padding-left: 50px;
+            color: white;
+            font-weight: 900;
+            font-size: 2em;
+        }
+
+        nav {
+            padding-right: 50px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            padding-right: 23px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img_about {
+            width: 60%;
+            
+        }
+
+        .content {
+            padding-top: 200PX;
+            padding-left: 20PX;
+        }
+        .content2 {
+            padding-top: 200PX;
+            padding-left: 20PX;
+        }
+
+        .content h2 {
+            font-weight: 900;
+            font-size: 3em;
+        }
+
+        .content p {
+
+            font-size: 2.5em;
+        }
+        footer{
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: black;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #fff;
+                text-align: center;
+            }
+            nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+        @media only screen and (max-width: 450px) {
+            .content{
+                padding: 150px 10px 10px 10px;
+                width: 100%;
+            } .content2{
+                padding: 0;
+                width: 100%;
+            }
+            footer{
+                font-size: 1.2em;
+                padding: 5px;
+            }
+            .content p {
+
+            font-size: 1.5em;
+            }
+            header nav ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            header li{
+                width: 40%;
+                padding: 0;
+            }
+            header nav ul,header nav{
+                padding: 0;
+            }
+            .logo{
+                padding: 0;
+            }
+            header{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .main{
+                flex-wrap: wrap;
+            }
+            img {
+                width: 100%;
+            }
+            .img_about{
+                width: 100%;
+                min-height: auto;
+            }
+        }
+        
+    </style>
+    <header>
+        <a href="#" class="logo">Diving</a>
+        <nav>
+            <ul>
+                <li><a href="Index.HTML">about</a></li>
+                <li><a href="SERVICE.HTML">services</a></li>
+                <li><a href="OFFERS.HTML">offers</a></li>
+                <li><a href="CONTACT.HTML">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        
+        <div class="content">
+            <h2> SCUBA DIVING </h2>
+            <p>The website about diving
+                Make diving for course and holiday<br>
+                you can reserve from website
+                for anyday you want
+                (for any offers you want)<br>
+                there are many services and
+                product and offers for diving you can get it from navagation</p>
+        </div>
+        <div class="content2">        
+            <div class="img_about">
+            <img src="DIVING.jpg" alt="">
+        </div>
+    </div>
+
+    </section>
+    <footer>    copy rigth 2023 scuba diving All rigth reserved </footer>
+</body>
+
+</html>
